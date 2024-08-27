@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<t   itle>クレジットカード情報変更</title>
+</head>
+
+<body>
+	<h2>クレジットカード情報変更</h2>
+	<form action="process.php" method="post">
+		<div id="payment-element">
+			<button type="submit">変更</button>
+	</form>
+	<div th:replace="~{fragment :: scripts}"></div>
+	<script src="https://js.stripe.com/v3"></script>
+	<script th:src="@{/js/stripe.js}"></script>
+</body>
+
+</html>
